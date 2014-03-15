@@ -429,10 +429,12 @@ namespace Gui
     ProError Dialog::PB_SESSION_PARTLIST_ACTION(char *dialog, char *component, ProAppData app_data)
     {
         ProError    status;
+        SfaBom bom;
+
+        bom.CreatePartList();
 
 
-
-        return PRO_TK_NO_ERROR;   
+        return PRO_TK_NO_ERROR;  
     }
 
 
