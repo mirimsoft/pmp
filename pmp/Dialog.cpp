@@ -3,6 +3,7 @@
 #include "BatchPlot.h"
 #include "FindParam.h"
 #include "Drw.h"
+#include "SfaBom.h"
 
 #pragma region CONSTANT DEFINITIONS
 
@@ -416,6 +417,9 @@ namespace Gui
     {
         ProError    status;
 
+        SfaBom bom;
+
+        bom.CreateBom();
 
 
         return PRO_TK_NO_ERROR;   
