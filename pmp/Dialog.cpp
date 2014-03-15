@@ -416,7 +416,7 @@ namespace Gui
     ProError Dialog::PB_SESSION_BOM_ACTION(char *dialog, char *component, ProAppData app_data)
     {
         ProError    status;
-
+        // RB01 REV 2
         SfaBom bom;
 
         bom.CreateBom();
