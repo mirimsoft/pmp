@@ -123,7 +123,7 @@
     </Link>
     <PostBuildEvent>
       <Command>
-</Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -152,7 +152,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PMP_EXPORTS;PRO_MACHINE=29;PRO_OS=4;USE_ANSI_IOSTREAMS;PRO_USE_VAR_ARGS;PRO_USE_VAR_ARG;_ITERATOR_DEBUG_LEVEL=0;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\PTC\Creo 2.0\Common Files\M060\protoolkit\includes;D:\PTC\Creo 2.0\Common Files\M060\protoolkit\protk_appls\includes;D:\PTC\pmp\pmp\pugixml-1.2\src;D:\PTC\pmp\pmp\pt_utils;D:\PTC\pmp\pmp\Mirim;D:\PTC\pmp\pmp</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\PTC\Creo 2.0\Common Files\M060\protoolkit\includes;D:\PTC\Creo 2.0\Common Files\M060\protoolkit\protk_appls\includes;D:\GIT\pmp\pmp\pugixml-1.2\src;D:\GIT\pmp\pmp\pt_utils;D:\GIT\pmp\pmp\Mirim;D:\GIT\pmp\pmp</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>

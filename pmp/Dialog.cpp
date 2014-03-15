@@ -390,7 +390,7 @@ namespace Gui
     {
         ProError    status;
 
-        Session::CollectModels
+        
 
 
         return PRO_TK_NO_ERROR;   
