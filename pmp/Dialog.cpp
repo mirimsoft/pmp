@@ -431,9 +431,7 @@ namespace Gui
         ProError    status;
         SfaBom bom;
 
-        bom.CreatePartList();
-
-
+        status = bom.CreatePartList();
         return PRO_TK_NO_ERROR;  
     }
 
