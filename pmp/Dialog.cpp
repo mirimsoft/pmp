@@ -434,11 +434,17 @@ namespace Gui
 
     ProError Dialog::PB_SHOW_LOG_ACTION(char *dialog, char *component, ProAppData app_data)
     {
-        ProError    status;
+        TLog::Close();
+        wchar_t		*w_file_path;
 
+        w_file_path = _wtempnam(NULL, L"BatchTools");
+        wcscat(w_file_path, L".txt");
 
+        CopyFile(TLog::w_file_path, w_file_path, false); 
+        Mirim::Util::ExecuteCommand(false, w_file_path, NULL);
+        TLog::Open(TLog::w_file_path, true);
 
-        return PRO_TK_NO_ERROR;   
+        return PRO_TK_NO_ERROR;  
     }
 
 
