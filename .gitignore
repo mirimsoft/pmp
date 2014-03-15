@@ -44,6 +44,9 @@ ipch/
 *.sdf
 *.cachefile
 
+###
+#Visual Studio log
+*.tlog
 
 # Visual Studio profiler
 *.psess
@@ -175,3 +178,7 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+pmp/x64/Debug/pmp.dll.intermediate.manifest
+pmp/x64/Debug/pmp.lastbuildstate
+pmp/x64/Debug/pmp.res
+pmp/x64/Debug/vc100.idb
