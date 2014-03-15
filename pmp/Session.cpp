@@ -119,8 +119,6 @@ namespace Gui
 
 		TLog::Print(L"$$$ Total %d models are collected...", list.size());
 
-
-
 		return PRO_TK_NO_ERROR;
 	}
 

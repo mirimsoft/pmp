@@ -479,7 +479,6 @@ namespace Gui
 
         if (wcsicmp(w_type, L"ASM") == 0)
         {
-
             std::vector<Gui::Model> model_list;
             status = Gui::Session::CollectModels(w_source_path, model_list);
             for(auto it = model_list.begin(); it != model_list.end(); it++)

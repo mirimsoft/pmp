@@ -444,11 +444,25 @@ namespace Gui
 
     ProError Dialog::PB_SET_LICENSE_ACTION(char *dialog, char *component, ProAppData app_data)
     {
-        ProError    status;
+        ProError	status;
+        ProPath		w_path;
 
+        status = Mirim::Option::GetRootDirectory(w_path);
+        status = ProFileOpen(L"Select License File", L"*.xml", NULL, NULL, w_path, NULL, w_path);
+        if (status != PRO_TK_NO_ERROR) return status;
 
+        Mirim::Option *option = Mirim::Option::GetUniqueInstance();
+        wcscpy(option->LicenseFile, w_path);
+        Mirim::Option::Save(*option);
 
-        return PRO_TK_NO_ERROR;   
+        Mirim::License license;
+
+        if (!license.IsValid(true))
+        {
+            return PRO_TK_E_NOT_FOUND;
+        }
+
+        return PRO_TK_NO_ERROR; 
     }
 
 
