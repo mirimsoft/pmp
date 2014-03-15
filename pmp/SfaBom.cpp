@@ -149,7 +149,6 @@ namespace Gui
 
         std::vector<SfaPart> list;
         list.push_back(SfaPart(mdl, 0));
-
         status = this->CollectBom(mdl, 0, list);
 
         return PRO_TK_NO_ERROR;
