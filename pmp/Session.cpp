@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "Session.h"
 namespace Gui
 {
@@ -120,23 +119,43 @@ namespace Gui
 
 		TLog::Print(L"$$$ Total %d models are collected...", list.size());
 
-		for (auto it = list.begin(); it != list.end(); it ++)
-		{
-			status = ProPathCreate(it->mdl_data.path, it->mdl_data.name, L"DRW", PRO_VALUE_UNUSED, w_file_path);
-			status = ProMdlLoad(w_file_path, PRO_MDL_DRAWING, PRO_B_FALSE, &mdl);
-			if (status == PRO_TK_NO_ERROR)
-			{
-				TLog::Print(L"Drawing found = %s.drw", it->mdl_data.name);
-				it->drawing_exists = true;
-			}
-			else
-				it->drawing_exists = false;
-		}
+
 
 		return PRO_TK_NO_ERROR;
 	}
 
 
+    ProError Session::LoadDrawings(std::vector<Model> &mdl_list, std::vector<ProDrawing> &drw_list)
+    {
+        ProError    status;
+        ProPath     w_file_path;
+        ProDrawing  drawing;
+
+        drw_list = std::vector<ProDrawing>();
+
+        for (auto it = mdl_list.begin(); it != mdl_list.end(); it ++)
+        {
+            status = ProMdlInit(it->mdl_data.name, PRO_MDL_DRAWING, (ProMdl *) &drawing);
+            if (status != PRO_TK_NO_ERROR)
+            {
+                status = ProPathCreate(it->mdl_data.path, it->mdl_data.name, L"DRW", PRO_VALUE_UNUSED, w_file_path);
+                status = ProMdlLoad(w_file_path, PRO_MDL_DRAWING, PRO_B_FALSE, (ProMdl *) &drawing);
+            }
+
+            if (status == PRO_TK_NO_ERROR)
+            {
+                TLog::Print(L"Drawing found = %s.drw", it->mdl_data.name);
+                it->drawing_exists = true;
+                drw_list.push_back(drawing);
+            }
+            else
+            {
+                it->drawing_exists = false;
+            }
+        }
+
+        return PRO_TK_NO_ERROR;
+    }
 
 
 

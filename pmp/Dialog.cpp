@@ -389,11 +389,26 @@ namespace Gui
     ProError Dialog::PB_LOAD_DRAWING_ACTION(char *dialog, char *component, ProAppData app_data)
     {
         ProError    status;
+        ProPath     w_message;
 
+        std::vector<Gui::Model> mdl_list;
+        status = Session::CollectModels(mdl_list);
+
+        std::vector<ProDrawing> drw_list;
+        status = Session::LoadDrawings(mdl_list, drw_list);
+
+        if (drw_list.size() == 0)
+        {
+            wsprintf(w_message, L"No drawings found...");
+        }
+        else
+        {
+            wsprintf(w_message, L"Total %d drawings found...", drw_list.size());
+        }
         
+        Mirim::MsgBox::Show(L"PMP", w_message);
 
-
-        return PRO_TK_NO_ERROR;   
+        return PRO_TK_NO_ERROR;
     }
 
 
