@@ -26,6 +26,9 @@ namespace Gui
 		static ProError Dialog::PB_SET_LICENSE_ACTION(char *dialog, char *component, ProAppData app_data);
 		static ProError Dialog::PB_ADMIN_ACTION(char *dialog, char *component, ProAppData app_data);
 		static ProError Dialog::PB_ABOUT_ACTION(char *dialog, char *component, ProAppData app_data);
+        static ProError Dialog::PB_GENERATE_ACTION(char *dialog, char *component, ProAppData app_data);
+
+
 
 		static ProError Dialog::ShowStdParams();
 

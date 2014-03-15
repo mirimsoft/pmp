@@ -465,14 +465,47 @@ namespace Gui
         return PRO_TK_NO_ERROR; 
     }
 
+    ProError Dialog::PB_GENERATE_ACTION(char *dialog, char *component, ProAppData app_data)
+    {
+
+        ProError	status;
+        ProPath		w_file_path;
+        wchar_t		*w_value;
+
+        status = ProUIInputpanelWidestringGet("SimpleDialog", "InputPanel1", &w_value);
+        status = ProUIDialogExit("SimpleDialog", PRO_TK_NO_ERROR);
+
+        if (wcslen(w_value) != 17) return PRO_TK_GENERAL_ERROR;
+
+        //wcscpy(w_file_name, L"1C-6F-65-F9-24-5E");
+
+        status = ProDirectoryCurrentGet(w_file_path);
+        status = ProFileSave(L"Select file name", L"*.xml", NULL, NULL, w_value, NULL, w_file_path);
+        if (status != PRO_TK_NO_ERROR) return status;
+
+        Mirim::License license(w_file_path, w_value);
+
+        return PRO_TK_NO_ERROR;
+    }
+
 
     ProError Dialog::PB_ADMIN_ACTION(char *dialog, char *component, ProAppData app_data)
     {
-        ProError    status;
+        ProError	status;
+        int			error;
 
+        Mirim::Option *option = ( Mirim::Option *)app_data;
 
+        status = ProUIDialogCreate("SimpleDialog", "SimpleDialog");
+        status = ProUIDialogTitleSet("SimpleDialog", L"Enter Text");
 
-        return PRO_TK_NO_ERROR;   
+        status = ProUIPushbuttonActivateActionSet("SimpleDialog", "PushButton1",(ProUIAction)Dialog::PB_GENERATE_ACTION, option);
+        status = ProUIDialogCloseActionSet("SimpleDialog",(ProUIAction)Dialog::CLOSE_ACTION, option);
+
+        status = ProUIDialogActivate("SimpleDialog", &error);
+        status = ProUIDialogDestroy("SimpleDialog");
+
+        return PRO_TK_NO_ERROR;
     }
 
 
