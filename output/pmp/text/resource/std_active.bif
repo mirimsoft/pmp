@@ -1,0 +1,19 @@
+!----------------------------------------------------------------------------
+!  Date      Release Name  Ver.  Comments
+! ---------- ------- ----- ----- --------------------------------------------
+! 17-May-98  I-01-08 AShk  $$1  Submitted.
+!----------------------------------------------------------------------------
+(Image new
+    (Resources
+        (.Width     10)
+        (.Height    12)
+        (.Depth     4)
+    )
+
+    (Data
+        FFFFFFFF09FFFFFFFFFFFFFFFFFF0909FFFFFFFFFFFFFFFF090909FFFFFFFFFF
+        FFFF09090909FFFF090909090909090909FF0909090909090909090901010101
+        010101010100000000000101010100FFFFFFFFFF01010100FFFFFFFFFFFF0101
+        00FFFFFFFFFFFFFF0100FFFFFFFFFFFFFFFF00FFFFFFFFFF
+    )
+)

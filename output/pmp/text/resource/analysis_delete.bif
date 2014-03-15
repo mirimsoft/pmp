@@ -1,0 +1,10 @@
+(Image delete_light
+    (Resources
+        (.Width     20)
+        (.Height    20)
+        (.Depth     8)
+    )
+    (Data
+        C1C5FFC915C5FFC915C5FFC915C5FFC915C1C5FF
+    )
+)

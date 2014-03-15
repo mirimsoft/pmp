@@ -1,0 +1,16 @@
+!*  11-Jul-97  H-03-16  TWB  $$1 Created
+!*  26-Aug-97  H-03-19+ twb      $$2 Refined icon per comments
+!*  07-Jun-00  J-01-10  twb      $$3 Updated for new look
+(Image undo
+    (Resources
+        (.Width     20)
+        (.Height    20)
+        (.Depth     8)
+    )
+    (Data
+        CAC3FF08C1150808C8FF08C615C1FF15C1FF08151508C0FF0808C015C0FF1515
+        FFFF081508C4FF08151508FFFFC0150815C7FF081515FFFFC115C8FF081515FF
+        FFC215C7FF081515FFFFC315C6FF081508FFFFC415C5FF1515CEFF1515CDFF08
+        1508D1C2FF
+    )
+)

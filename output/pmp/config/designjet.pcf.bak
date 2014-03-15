@@ -1,0 +1,22 @@
+﻿plotter DESIGNJET
+button_name DESIGNJET
+button_help DESIGNJET
+plot_drawing_format YES default
+plot_segmented NO default
+plot_roll_media NO default
+plot_label NO default
+plot_handshake software default
+create_separate_files NO default
+plot_with_panzoom YES default
+rotate_plotting NO default
+allow_file_naming YES
+plot_name NO
+interface_quality 3 default
+plot_destination file_and_printer default
+!plotter_command WINDOWS_PRINT_MANAGER
+pen_table_file D:\PTC\pro_stds\plotters\pen_table.pnt
+plot_sheets current default
+paper_size A3  default
+paper_outline NO default
+plot_clip NO default
+plot_area NO default

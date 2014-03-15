@@ -1,0 +1,11 @@
+(Image add
+    (Resources
+        (.Width     20)
+        (.Height    20)
+        (.Depth     8)
+    )
+    (Data
+        D5C2FFC102CDFFC102CDFFC102CDFFC102C9FFC902C5FFC902C5FFC902C5FFC9
+        02C9FFC102CDFFC102CDFFC102CDFFC102D5C2FF
+    )
+)

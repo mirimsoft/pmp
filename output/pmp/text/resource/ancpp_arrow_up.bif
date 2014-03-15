@@ -1,0 +1,11 @@
+! 14-Apr-04 K-03-01 gen    $$1   Created.
+(Image ancpp_up
+    (Resources
+        (.Width     9)
+        (.Height    9)
+        (.Depth     8)
+    )
+    (Data
+        D3FF09C4FFC009C2FFC209C0FFC409FFC609CFFF
+    )
+)

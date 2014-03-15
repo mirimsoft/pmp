@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Configuration>
+	<Option>
+		<ExportDxf>false</ExportDxf>
+		<ExportDwg>false</ExportDwg>
+		<ExportHpgl>false</ExportHpgl>
+		<ExportPdf>false</ExportPdf>
+		<Print>true</Print>
+		<ExportDwg>false</ExportDwg>
+		<ShowAsm1>true</ShowAsm1>
+		<ShowPrt1>true</ShowPrt1>
+		<ShowAsm2>true</ShowAsm2>
+		<ShowDrw2>true</ShowDrw2>
+		<SourceFolder>d:\ptc\pro_stds\COVER20090107 - 복사본</SourceFolder>
+		<TotalLength>16</TotalLength>
+		<PartNrStart>13</PartNrStart>
+		<PartNrLength>4</PartNrLength>
+		<PrinterName>FX DocuPrint CP105 b</PrinterName>
+		<PaperSize>A3</PaperSize>
+		<PrintFormat>PDF</PrintFormat>
+		<LicenseFile></LicenseFile>
+		<ColumnWidths>20,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,</ColumnWidths>
+	</Option>
+</Configuration>

@@ -1,0 +1,39 @@
+Curves
+#
+#
+n#Points#On#Curve
+Create Points on Curve/General Point
+#
+d#Points#On#Curve
+Create Points on Curve/General Point
+#
+Points#Along#Curves
+Create Points Along Curves/Offset Points	
+#
+Approx#Sketch#Along#Curves
+Draw Approx Sketch thru the selected Curves
+#	
+Closed#Approx#Curve
+Draw Approx Curve thru the selected Curves
+#
+Open#Approx#Curve
+Draw Approx Curve thru the selected Curves
+#
+Exact#Curve#Along#Curves
+Convert Line/Arc,... to Spline
+#
+Insert#Spline
+Insert Tangent Curve Between Two Curves
+#
+Extend#Curve
+Extend Curve End by Length
+#
+Trim#Curve
+Trim Curves
+#
+Edges#To#Curves
+Convert Edges/Curves to Curves
+#
+Done/Return
+Finish and Return to the Main Menu
+#

@@ -1,0 +1,11 @@
+! 05-May-03 K-01-06 ssankara  $$1  Created.
+(Image ancpp_down
+    (Resources
+        (.Width     9)
+        (.Height    9)
+        (.Depth     8)
+    )
+    (Data
+        D8FF00FF00FF00FF00FF00C8FF00FF00FF00CCFF00CAFF
+    )
+)

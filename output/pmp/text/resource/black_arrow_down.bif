@@ -1,0 +1,30 @@
+!----------------------------------------------------------------------------
+!
+!  Module Details:
+!
+!  Name:    black_arrow_down.bif
+!
+!  Purpose:
+!   Black down arrow image for autoplacement dialog.
+!
+!  History:
+!
+!  Date      Release Name  Ver.  Comments
+!  --------- ------- ----- ----- --------------------------------------------
+!  24-MAY-00 J-01-08 NJL   $$1   Created from arrow_down.bif.
+!  INSERT COMMENT ABOVE THIS LINE
+!
+!----------------------------------------------------------------------------
+
+(Image black_arrow_down
+    (Resources
+        (.Width     16)
+        (.Height    16)
+        (.Depth     4)
+    )
+    (Data
+        CEFFCB00FFFF08CA00C0FF0808C700C1FF0808C700C2FF0808C500C3FF0808C5
+        00C4FF0808C300C5FF0808C300C6FF0808C100C7FF0808C100C8FF08080000C9
+        FF08080000CAFF0800CBFF0800D4FF
+    )
+)

@@ -1,0 +1,19 @@
+!===========================================================================
+!
+! 10-Mar-99 I-03-04 TR     $$1     Created.
+!
+!===========================================================================
+
+(Image copy_part
+    (Resources
+        (.Width     16)
+        (.Height    19)
+        (.Depth     4)
+    )
+    (Data
+        C4FF0000C1FF03C7FF00C0FFC003C6FF0000FF03FF03FF03CAFF03CCFF03C0FF
+        00FF00C6FF03C1FF00C7FF03C1FF00FFC003C3FF03C3FF0303C4FF03C3FF03FF
+        0303C2FF03C7FF0303C0FF03C9FF0303FF03CBFF0303CBFF0303C9FF0303C2FF
+        00FF00C1FF0303C5FF00FF03FF0303C6FF00FF000303CBFFC003C6FF
+    )
+)

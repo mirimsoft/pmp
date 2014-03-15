@@ -1,0 +1,36 @@
+!----------------------------------------------------------------------------
+!
+!  Module Details:
+!
+!  Name:    arrow_down.bif
+!
+!  Purpose:
+!   Down arrow image for a menu panel
+!
+!  History:
+!
+!  Date      Release Name  Ver.  Comments
+!  --------- ------- ----- ----- --------------------------------------------
+!  04-Sep-96 H-01-07 aw    $$1   Created.
+!  10-Sep-96 H-01-08 aw    $$2   Changed depth of image
+!  10-APR-05 K-03-22 tlh   $$3   Updated.
+!
+!  INSERT COMMENT ABOVE THIS LINE
+!
+!----------------------------------------------------------------------------
+
+(Image arrow_down
+    (Resources
+        (.Width     16)
+        (.Height    16)
+        (.Depth     24)
+    )
+    (Data
+        0FFFFFFF03F0FD000D100D200D8F8AA7C701340D440D540D33F73333012C09CC
+        E4FF01070033997B0D8B0D97066809700D00C00DD00DA80DB40D001D101DE40D
+        F00D00141D181D2C1D341D501D541D6C1D701D00801D981DE01DB41DC41DD41D
+        202D302D00002D182D602D702D442D542DA02DB02D00802D982DE02DF02DC42D
+        D42D203D303D002C09143D5C3D6C3D403D503D9C3DAC3D00BC3DCC3DDC3D
+    )
+)
+

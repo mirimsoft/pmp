@@ -1,0 +1,16 @@
+!*  11-Jul-97  H-03-16  TWB  $$1 Created
+!*  26-Aug-97  H-03-19+ twb      $$2 Refined icon per comments
+!*  07-Jun-00  J-01-10  twb/pmu  $$3 Updated for new look
+(Image redo
+    (Resources
+        (.Width     20)
+        (.Height    20)
+        (.Depth     8)
+    )
+    (Data
+        C5C3FF0808C11508C9FFC61508C6FFC0150808C0FF08151508C1FF15FFFF0815
+        1508C4FF081508FFFF1515FFFF151508C7FF1508C015FFFF151508C8FFC115FF
+        FF151508C7FFC215FFFF081508C6FFC315C0FF1515C5FFC415C1FF1515D0FF08
+        1508DAC2FF
+    )
+)

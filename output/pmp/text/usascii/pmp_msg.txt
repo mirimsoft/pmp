@@ -1,0 +1,16 @@
+PMP_MSG %0s
+%0s
+#
+#
+PMP_DIALOG_LABEL
+[pmp]
+#
+#
+BT_SHOW_DIALOG_LABEL
+Start
+#
+#
+USER New Button help.
+Batch Tools를 시작합니다.
+#
+#

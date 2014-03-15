@@ -1,0 +1,12 @@
+!  23-Oct-02 J-03-36 AlexM $$1 Created 
+
+(Image tb_gap_vert
+    (Resources
+        (.Width     28)
+        (.Height    1)
+        (.Depth     4)
+    )
+    (Data
+        D9FF
+    )
+)
